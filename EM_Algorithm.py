@@ -1,3 +1,6 @@
+# Target:
+# 用只有两个高斯模型的混合高斯模型来作为算法的基本实现
+# 如果想实现多个高斯模型, 可以进一步修改
 import numpy as np
 
 def create_dataset(mu0,sig0,alpha0,mu1,sig1,alpha1,length=1000):
