@@ -16,6 +16,7 @@ def loadDataSet(filename):
 def binSplitDataSet(dataSet,feature,value):
     mat0 = dataSet[np.nonzero(dataSet[:,feature] > value)[0], :]
     mat1 = dataSet[np.nonzero(dataSet[:,feature] <= value)[0],:]
+
     return mat0, mat1
 
 def chooseBestSplit(dataSet,leafType,errType,ops):
