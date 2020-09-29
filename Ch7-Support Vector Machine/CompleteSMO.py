@@ -182,7 +182,7 @@ if __name__ == '__main__':
     data,label = loadDataSet('testSet.txt')
     b,alphas = SMO_complete(data,label,0.6,0.001,40)
     ws = calcWs(alphas,data,label)
-    plotData(data,label,ws,b)
+    plotData(data,label,ws,b)  #有一点弄不明白的是为什么支持向量似乎不对？还有就是每次运行的结果都不一样？
 
     errorCount = 0
     for i in range(len(data)):
